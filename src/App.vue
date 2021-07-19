@@ -4,7 +4,22 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view />
+  <metainfo></metainfo>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import { useMeta } from "vue-meta";
+
+export default defineComponent({
+  name: "App",
+  setup() {
+    useMeta({
+      title: "App",
+    });
+  },
+});
+</script>
 
 <style lang="scss">
 #app {

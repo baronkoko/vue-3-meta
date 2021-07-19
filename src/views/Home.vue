@@ -17,7 +17,7 @@ export default defineComponent({
   },
   setup() {
     useMeta({
-      title: "My Title",
+      title: "Home",
     });
   },
 });
